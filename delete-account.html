@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DPN Network - Delete Account</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #020814;
+      --card: rgba(8, 24, 38, 0.82);
+      --line: rgba(0, 216, 255, 0.35);
+      --accent: #00d8ff;
+      --text: #ffffff;
+      --muted: #9ccfe0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(0, 216, 255, 0.18), transparent 34rem),
+        linear-gradient(180deg, #020814, #06111d);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 28px 16px;
+    }
+    main {
+      width: min(880px, 100%);
+      margin: 0 auto;
+    }
+    .hero, .card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 22px;
+      box-shadow: 0 0 32px rgba(0, 216, 255, 0.14);
+      backdrop-filter: blur(14px);
+    }
+    .hero {
+      padding: 30px;
+      text-align: center;
+    }
+    .logo {
+      width: 86px;
+      height: 86px;
+      object-fit: contain;
+      border-radius: 999px;
+      box-shadow: 0 0 28px rgba(0, 216, 255, 0.5);
+    }
+    h1 {
+      margin: 18px 0 8px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.05;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+    .card {
+      padding: 22px;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 22px;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    a {
+      color: var(--accent);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button {
+      display: inline-flex;
+      margin-top: 16px;
+      padding: 13px 18px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00d8ff, #00aeef);
+      color: #020814;
+      box-shadow: 0 0 24px rgba(0, 216, 255, 0.35);
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 22px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img class="logo" src="/logo.png" alt="DPN Network logo">
+      <h1>DPN Network Account Deletion</h1>
+      <p>
+        This page explains how DPN Network users can request deletion of their
+        account and associated app data.
+      </p>
+      <a class="button" href="mailto:support@dpn.network?subject=DPN%20Network%20Account%20Deletion%20Request">Request account deletion</a>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>How to request deletion</h2>
+        <ol>
+          <li>Email us at <a href="mailto:support@dpn.network">support@dpn.network</a>.</li>
+          <li>Use the subject: <strong>DPN Network Account Deletion Request</strong>.</li>
+          <li>Send the email address used for your DPN Network account.</li>
+          <li>We may ask for confirmation to protect your account.</li>
+          <li>After confirmation, your account deletion request will be processed.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Data deleted</h2>
+        <ul>
+          <li>Firebase Authentication account where deletion is technically available.</li>
+          <li>User profile data such as username, email, invite code, wallet address fields, and app preferences.</li>
+          <li>Simulator reward records, mining sessions, referrals, notifications, and related in-app activity data.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Data retained</h2>
+        <p>
+          Some records may be retained only where required for security, fraud
+          prevention, legal compliance, dispute handling, or operational logs.
+          Retained records are limited and normally removed or anonymized within
+          90 days unless a longer period is legally required.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Partial data deletion</h2>
+        <p>
+          If you want some data deleted without deleting your account, email
+          <a href="mailto:support@dpn.network">support@dpn.network</a> and
+          describe the data you want removed.
+        </p>
+      </div>
+    </section>
+
+    <footer>DPN Network © 2026</footer>
+  </main>
+</body>
+</html>
